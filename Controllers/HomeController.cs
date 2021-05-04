@@ -39,7 +39,7 @@ namespace Project3_FinalExam.Controllers
 
         public async Task<IActionResult> Under()
         {
-            var getUnder = new GetUndergraduate();
+            var getUnder = new GetUnderGraduate();
             var under = await getUnder.GetUnderGradDegrees();
             var underViewModel = new UndergradViewModel()
             {
@@ -47,6 +47,18 @@ namespace Project3_FinalExam.Controllers
                 Title = "Undergraduate Programs"
             };
             return View(underViewModel);
+        }
+
+        public async Task<IActionResult> Grad()
+        {
+            var getGrad = new GetGraduate();
+            var grad = await getGrad.GetGradDegrees();
+            var gradViewModel = new GradViewModel()
+            {
+                Grads = grad,
+                Title = "Graduate Programs"
+            };
+            return View(gradViewModel);
         }
 
         public IActionResult Privacy()
