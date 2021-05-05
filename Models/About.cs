@@ -11,5 +11,6 @@ namespace Project3_FinalExam.Models
         public string description { get; set; }
         public string quote { get; set; }
         public string quoteAuthor { get; set; }
+
     }
 }

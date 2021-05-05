@@ -73,6 +73,18 @@ namespace Project3_FinalExam.Controllers
             return View(minorViewModel);
         }
 
+        public async Task<IActionResult> Employment()
+        {
+            var getEmployment = new GetEmployment();
+            var emp = await getEmployment.GetEmploymentTable();
+            var employmentViewModel = new EmploymentViewModel()
+            {
+                Employs = emp,
+                Title = "Employment"
+            };
+            return View(employmentViewModel);
+        }
+
         public async Task<IActionResult> About()
         {
             var getAbout = new GetAbout();

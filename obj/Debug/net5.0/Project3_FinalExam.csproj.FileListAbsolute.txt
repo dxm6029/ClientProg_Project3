@@ -2026,3 +2026,4 @@ C:/Users/frien/OneDrive/Desktop/ISTE340Final/obj/Debug/net5.0/Razor/Views/Home/M
 /Users/Nica/Projects/ClientProg_Project3/obj/Debug/net5.0/ref/Project3_FinalExam.dll
 /Users/Nica/Projects/ClientProg_Project3/obj/Debug/net5.0/Project3_FinalExam.pdb
 /Users/Nica/Projects/ClientProg_Project3/obj/Debug/net5.0/Project3_FinalExam.genruntimeconfig.cache
+/Users/Nica/Projects/ClientProg_Project3/obj/Debug/net5.0/Razor/Views/Home/Employment.cshtml.g.cs
