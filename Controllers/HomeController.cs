@@ -20,9 +20,16 @@ namespace Project3_FinalExam.Controllers
             _facultyRepository = facultyRepository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
-            return View();
+            var getAbout = new GetAbout();
+            var about = await getAbout.GetAboutInfo();
+            var aboutViewModel = new AboutViewModel()
+            {
+                About = about,
+                Title = "About"
+            };
+            return View(aboutViewModel);
         }
 
         public async Task<IActionResult> GetFaculty()

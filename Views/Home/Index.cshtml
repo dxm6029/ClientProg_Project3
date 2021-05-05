@@ -1,16 +1,19 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model Project3_FinalExam.ViewModels.AboutViewModel
 
-<div class="text-center">
-    <h1 class="display-4">This Is The Project 3, Home Page</h1>
+<h2>@Model.Title</h2>
+
+<div id="about"></div>
+
+
+<h3 id=@String.Concat("myHdng", Model.About.title)><b>@Model.About.title</b></h3>
+
+<div id=@String.Concat("myDiv")>
+    <p>@Model.About.description</p>
+
+    <p>@Model.About.quote</p>
+    <p>@Model.About.quoteAuthor</p>
 </div>
-<div>
-    <p>This is the "View" for the "HomeController" "Index()" Action method.</p>
-    <p>In this view you should place the following:</p>
-    <ul>
-        <li>A ViewData["Title"] appropriate to the page, see line 2, of the view "Index.cshtml" for the "HomeController".</li>
-        <li>A photograph, in an "img tag," of some aspect of RIT life or the campus</li>
-        <li>Some text information about RIT: use the "ist.rit.edu/api/about/" end point.</li>
-    </ul>
-</div>
+@*Get jQuery and jQueryUI Scripts from wwwroot*@
+<script src="~/jquery/jquery.js"></script>
+<link rel="stylesheet" href="~/jqueryui/themes/le-frog/jquery-ui.min.css">
+<script src="~/jqueryui/jquery-ui.js"></script>
