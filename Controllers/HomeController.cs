@@ -61,6 +61,18 @@ namespace Project3_FinalExam.Controllers
             return View(gradViewModel);
         }
 
+        public async Task<IActionResult> Minors()
+        {
+            var getMinor = new GetMinors();
+            var minor = await getMinor.GetMinorsItems();
+            var minorViewModel = new MinorViewModel()
+            {
+                Minors = minor,
+                Title = "Minors"
+            };
+            return View(minorViewModel);
+        }
+
         public IActionResult Privacy()
         {
             return View();

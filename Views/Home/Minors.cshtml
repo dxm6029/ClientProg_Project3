@@ -1,0 +1,25 @@
+﻿@model Project3_FinalExam.ViewModels.MinorViewModel
+
+<h2>@Model.Title</h2>
+
+<div id="myMinors"></div>
+
+@foreach (var minor in Model.Minors)
+{
+    <h3 id=@String.Concat("myHdng", minor.title)><b>@minor.title</b></h3>
+
+    <div id=@String.Concat("myDiv", minor.name)>
+        <p>@minor.description</p>
+        <ul>
+            @foreach (var course in @minor.courses)
+            {
+                <li>@course</li>
+}
+        </ul>
+        <p>@minor.note</p>
+    </div>
+}
+@*Get jQuery and jQueryUI Scripts from wwwroot*@
+<script src="~/jquery/jquery.js"></script>
+<link rel="stylesheet" href="~/jqueryui/themes/le-frog/jquery-ui.min.css">
+<script src="~/jqueryui/jquery-ui.js"></script>

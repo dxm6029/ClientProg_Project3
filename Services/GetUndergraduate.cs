@@ -42,9 +42,6 @@ namespace Project3_FinalExam.Services
                     }
 
                     return underGradList;
-
-
-
                 }
                 catch (HttpRequestException hre)
                 {
