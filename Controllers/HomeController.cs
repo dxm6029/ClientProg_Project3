@@ -73,6 +73,18 @@ namespace Project3_FinalExam.Controllers
             return View(minorViewModel);
         }
 
+        public async Task<IActionResult> About()
+        {
+            var getAbout = new GetAbout();
+            var about = await getAbout.GetAboutInfo();
+            var aboutViewModel = new AboutViewModel()
+            {
+                About = about,
+                Title = "About"
+            };
+            return View(aboutViewModel);
+        }
+
         public IActionResult Privacy()
         {
             return View();

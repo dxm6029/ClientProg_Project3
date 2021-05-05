@@ -1,0 +1,19 @@
+﻿@model Project3_FinalExam.ViewModels.AboutViewModel
+
+<h2>@Model.Title</h2>
+
+<div id="about"></div>
+
+
+<h3 id=@String.Concat("myHdng", Model.About.title)><b>@Model.About.title</b></h3>
+
+<div id=@String.Concat("myDiv")>
+    <p>@Model.About.description</p>
+
+    <p>@Model.About.quote</p>
+    <p>@Model.About.quoteAuthor</p>
+</div>
+@*Get jQuery and jQueryUI Scripts from wwwroot*@
+<script src="~/jquery/jquery.js"></script>
+<link rel="stylesheet" href="~/jqueryui/themes/le-frog/jquery-ui.min.css">
+<script src="~/jqueryui/jquery-ui.js"></script>
