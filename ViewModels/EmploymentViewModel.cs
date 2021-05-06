@@ -9,6 +9,7 @@ namespace Project3_FinalExam.ViewModels
     public class EmploymentViewModel
     { 
         public List<Employment> Employs { get; set; }
+        public List<Coop> Coops { get; set; }
         public string Title { get; set; }
         
     }

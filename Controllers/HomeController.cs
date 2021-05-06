@@ -77,9 +77,11 @@ namespace Project3_FinalExam.Controllers
         {
             var getEmployment = new GetEmployment();
             var emp = await getEmployment.GetEmploymentTable();
+            var coop = await getEmployment.GetCoopTable();
             var employmentViewModel = new EmploymentViewModel()
             {
                 Employs = emp,
+                Coops = coop,
                 Title = "Employment"
             };
             return View(employmentViewModel);

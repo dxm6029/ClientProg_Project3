@@ -2,7 +2,13 @@
 
 <h2>@Model.Title</h2>
 
+<h3>Employment Table</h3>
+
 <div id="jsGrid"></div>
+
+<h3>Coop Table</h3>
+
+<div id="coopTable"></div>
 
 
 @*Get jQuery and jQueryUI Scripts from wwwroot*@
@@ -28,6 +34,23 @@
             { name: "city", type: "text", title: "City"},
             { name: "title", type: "text", title: "Title"},
             { name: "startDate", type: "text", title:"Start Date" },
+        ]
+    });
+
+    $("#coopTable").jsGrid({
+        width: "100%",
+        height: "90%",
+
+        sorting: true,
+        paging: true,
+
+        data: @Html.Raw(Json.Serialize(Model.Coops)),
+
+        fields: [
+            { name: "employer", type: "text", title: "Employer" },
+            { name: "degree", type: "text", title: "Degree"},
+            { name: "city", type: "text", title: "City"},
+            { name: "term", type: "text", title: "Term"},
         ]
     });
 
