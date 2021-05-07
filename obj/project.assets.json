@@ -6260,23 +6260,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/Nica/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/Users/vsoler27/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Nica/Projects/ClientProg_Project3/Project3_FinalExam.csproj",
+      "projectUniqueName": "/Users/vsoler27/Documents/2205/ISTE340/ClientProg_Project3/Project3_FinalExam.csproj",
       "projectName": "Project3_FinalExam",
-      "projectPath": "/Users/Nica/Projects/ClientProg_Project3/Project3_FinalExam.csproj",
-      "packagesPath": "/Users/Nica/.nuget/packages/",
-      "outputPath": "/Users/Nica/Projects/ClientProg_Project3/obj/",
+      "projectPath": "/Users/vsoler27/Documents/2205/ISTE340/ClientProg_Project3/Project3_FinalExam.csproj",
+      "packagesPath": "/Users/vsoler27/.nuget/packages/",
+      "outputPath": "/Users/vsoler27/Documents/2205/ISTE340/ClientProg_Project3/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "/Users/Nica/.config/NuGet/NuGet.Config"
+        "/Users/vsoler27/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
