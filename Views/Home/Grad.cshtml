@@ -6,24 +6,24 @@
 
 @foreach (var grad in Model.Grads)
 {
-    <h3 id=@String.Concat("myHdng", grad.degreeName)><b>@grad.degreeName</b></h3>
+<h3 id=@String.Concat("myHdng", grad.degreeName)><b>@grad.degreeName</b></h3>
 
-    <div id=@String.Concat("myDiv", grad.degreeName)>
-        <p>@grad.title</p>
-        <p>@grad.description</p>
-        <ul>
-            @foreach (var conc in @grad.concentrations ?? grad.availableCertificates)
-            {
-        <li>@conc</li>}
-        </ul>
-    </div>
+                <div id=@String.Concat("myDiv", grad.degreeName)>
+                    <p>@grad.title</p>
+                    <p>@grad.description</p>
+                    <ul>
+                        @foreach (var conc in @grad.concentrations ?? grad.availableCertificates)
+                        {
+        <li>@conc</li>
 }
+                    </ul>
+                </div>}
 @*Get jQuery and jQueryUI Scripts from wwwroot*@
 <script src="~/jquery/jquery.js"></script>
-<link rel="stylesheet" href="~/jqueryui/themes/le-frog/jquery-ui.min.css">
+<link rel="stylesheet" href="~/jqueryui/themes/hot-sneaks/jquery-ui.min.css">
+<link rel="stylesheet" href="~/css/site.css">
 <script src="~/jqueryui/jquery-ui.js"></script>
-<script>
-    // Create Accordion
+<script>// Create Accordion
     let headings = document.querySelectorAll("h3");
     let divs = document.querySelectorAll("[id^='myDiv']");
 
@@ -36,5 +36,4 @@
         collapsible: true,
         active: false,
         heightStyle: "content"
-    });
-</script>
+    });</script>

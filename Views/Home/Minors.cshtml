@@ -30,10 +30,10 @@
 
 @*Get jQuery and jQueryUI Scripts from wwwroot*@
 <script src="~/jquery/jquery.js"></script>
-<link rel="stylesheet" href="~/jqueryui/themes/le-frog/jquery-ui.min.css">
+<link rel="stylesheet" href="~/jqueryui/themes/hot-sneaks/jquery-ui.min.css">
 <script src="~/jqueryui/jquery-ui.js"></script>
-<script>
-    let divs = document.querySelectorAll("[id^='myDiv']");
+<link rel="stylesheet" href="~/css/site.css">
+<script>let divs = document.querySelectorAll("[id^='myDiv']");
 
     for (var i = 0; i < divs.length; i++) {
         $("#myMinors").append($("#" + divs[i].id));
