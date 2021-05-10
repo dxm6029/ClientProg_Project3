@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Nica/Projects/ClientProg_Project3/Project3_FinalExam.csproj": {}
+    "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj": {}
   },
   "projects": {
-    "/Users/Nica/Projects/ClientProg_Project3/Project3_FinalExam.csproj": {
+    "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Nica/Projects/ClientProg_Project3/Project3_FinalExam.csproj",
+        "projectUniqueName": "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj",
         "projectName": "Project3_FinalExam",
-        "projectPath": "/Users/Nica/Projects/ClientProg_Project3/Project3_FinalExam.csproj",
-        "packagesPath": "/Users/Nica/.nuget/packages/",
-        "outputPath": "/Users/Nica/Projects/ClientProg_Project3/obj/",
+        "projectPath": "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj",
+        "packagesPath": "/Users/aaron/.nuget/packages/",
+        "outputPath": "/Users/aaron/Documents/iste340/ClientProg_Project3/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/Nica/.config/NuGet/NuGet.Config"
+          "/Users/aaron/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

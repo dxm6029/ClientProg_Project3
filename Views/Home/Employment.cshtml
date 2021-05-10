@@ -155,13 +155,41 @@
         background-color: azure;
         font-family: Arial, Helvetica, sans-serif;
     }
-    h3{
+
+    h3 {
         font-size: 1.5em;
         font-style: italic;
         text-align: center;
         padding-top: 10px;
     }
-    h2{
-         padding-bottom: 5px;
-     }
+
+    h2 {
+        padding-bottom: 5px;
+    }
 </style>
+
+ @*Magnific Popup (map plugin)*@ 
+<link type="text/css" rel="stylesheet" href="~/magnific-popup/magnific-popup.css">
+ @*Magnific Popup core JS file*@ 
+<script src="~/magnific-popup/jquery.magnific-popup.js"></script>
+
+@*<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.js" integrity="sha512-/jeu5pizOsnKAR+vn28EbhN5jDSPTTfRzlHZh8qSqB77ckQd3cOyzCG9zo20+O7ZOywiguSe+0ud+8HQMgHH9A==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.css" integrity="sha512-4a1cMhe/aUH16AEYAveWIJFFyebDjy5LQXr/J/08dc0btKQynlrwcmLrij0Hje8EWF6ToHCEAllhvGYaZqm+OA==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" />*@
+
+
+<a id="mapID" class="popup-gmaps" href="http://ist.rit.edu/api/map.php">Open Employment Map</a>
+
+<script>
+    @*$(document).ready(function () {*@
+        $('.popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+            fixedContentPos: false
+        });
+    @*});*@
+</script>
