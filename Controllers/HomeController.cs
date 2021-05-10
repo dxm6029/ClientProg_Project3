@@ -39,7 +39,7 @@ namespace Project3_FinalExam.Controllers
             var homeViewModel = new HomeViewModel()
             {
                 Faculty = allFaculty.ToList(),
-                Title = "This is your Faculty"
+                Title = "Faculty"
             };
             return View(homeViewModel);
         }

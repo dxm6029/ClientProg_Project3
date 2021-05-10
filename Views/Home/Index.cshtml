@@ -1,21 +1,50 @@
 ﻿@model Project3_FinalExam.ViewModels.AboutViewModel
 
-<h2>@Model.Title</h2>
+<h2 id="head">@Model.Title</h2>
 
 <div id="about"></div>
 
 
-<h3 id=@String.Concat("myHdng", Model.About.title)><b>@Model.About.title</b></h3>
+<h3 id="title"><b>@Model.About.title</b></h3>
 
 <div id=@String.Concat("myDiv")>
-    <p>@Model.About.description</p>
+    <p id="description">@Model.About.description</p>
 
-    <p>@Model.About.quote</p>
-    <p>@Model.About.quoteAuthor</p>
+    <p id="quote">@Model.About.quote</p>
+    <p id="auth">-@Model.About.quoteAuthor</p>
 </div>
 @*Get jQuery and jQueryUI Scripts from wwwroot*@
 <script src="~/jquery/jquery.js"></script>
 <link rel="stylesheet" href="~/jqueryui/themes/hot-sneaks/jquery-ui.min.css">
 <script src="~/jqueryui/jquery-ui.js"></script>
 <link rel="stylesheet" href="~/css/site.css">
+<style>
+    body {
+        background-color: azure;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #title {
+        font-style: italic;
+        font-size: 1.5em;
+        padding-bottom: 10px;
+    }
+
+    #description {
+        padding-bottom: 10px;
+        padding-bottom: 15px;
+    }
+
+    #quote {
+        display: block;
+        font-style: italic;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #auth {
+        text-align: center;
+    }
+</style>
 

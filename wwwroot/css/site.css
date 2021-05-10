@@ -9,10 +9,6 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 
-*{
-    background-color: blue;
-}
-
 a {
   color: #0366d6;
 }
