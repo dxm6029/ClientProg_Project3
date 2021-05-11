@@ -7,6 +7,16 @@
 
 <h3 id=@String.Concat("myHdng", Model.About.title)><b>@Model.About.title</b></h3>
 
+<ul class="rslides">
+      <li><img src="assets/images/rit.jpg" alt="RIT"></li>
+      <li><img src="assets/images/ritBuilding.jpg" alt="RIT Building"></li>
+      <li><img src="assets/images/circuitboard.jpg" alt="Dude Working on a curcuitboard."></li>
+      <li><img src="assets/images/outside.jpg" alt="Snapshot of people walking on campus."></li>
+      <li><img src="assets/images/fishbowl.jpg"
+          alt="Graduates jumping in front of the fishbowl and Golisano in the background."></li>
+      <li><img src="assets/images/munsun.jpg" alt="Munsun giving a speech in the Gordon Field House"></li>
+</ul>
+
 <div id=@String.Concat("myDiv")>
     <p>@Model.About.description</p>
 
@@ -18,3 +28,8 @@
 <link rel="stylesheet" href="~/jqueryui/themes/hot-sneaks/jquery-ui.min.css">
 <script src="~/jqueryui/jquery-ui.js"></script>
 <link rel="stylesheet" href="~/css/site.css">
+<script>
+    $(function () {
+    $(".rslides").responsiveSlides();
+    });
+</script>
