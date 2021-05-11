@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj": {}
+    "C:\\Users\\frien\\Source\\Repos\\ClientProg_Project3\\Project3_FinalExam.csproj": {}
   },
   "projects": {
-    "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj": {
+    "C:\\Users\\frien\\Source\\Repos\\ClientProg_Project3\\Project3_FinalExam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj",
+        "projectUniqueName": "C:\\Users\\frien\\Source\\Repos\\ClientProg_Project3\\Project3_FinalExam.csproj",
         "projectName": "Project3_FinalExam",
-        "projectPath": "/Users/aaron/Documents/iste340/ClientProg_Project3/Project3_FinalExam.csproj",
-        "packagesPath": "/Users/aaron/.nuget/packages/",
-        "outputPath": "/Users/aaron/Documents/iste340/ClientProg_Project3/obj/",
+        "projectPath": "C:\\Users\\frien\\Source\\Repos\\ClientProg_Project3\\Project3_FinalExam.csproj",
+        "packagesPath": "C:\\Users\\frien\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frien\\Source\\Repos\\ClientProg_Project3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/aaron/.config/NuGet/NuGet.Config"
+          "C:\\Users\\frien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

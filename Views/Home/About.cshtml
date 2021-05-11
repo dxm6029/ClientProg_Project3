@@ -8,13 +8,12 @@
 <h3 id=@String.Concat("myHdng", Model.About.title)><b>@Model.About.title</b></h3>
 
 <ul class="rslides">
-      <li><img src="assets/images/rit.jpg" alt="RIT"></li>
-      <li><img src="assets/images/ritBuilding.jpg" alt="RIT Building"></li>
-      <li><img src="assets/images/circuitboard.jpg" alt="Dude Working on a curcuitboard."></li>
-      <li><img src="assets/images/outside.jpg" alt="Snapshot of people walking on campus."></li>
-      <li><img src="assets/images/fishbowl.jpg"
-          alt="Graduates jumping in front of the fishbowl and Golisano in the background."></li>
-      <li><img src="assets/images/munsun.jpg" alt="Munsun giving a speech in the Gordon Field House"></li>
+    <li><img src="../wwwroot/images/rit.jpg" alt="RIT"></li>
+    <li><img src="../wwwroot/images/ritBuilding.jpg" alt="RIT Building"></li>
+    <li><img src="../wwwroot/images/circuitboard.jpg" alt="Dude Working on a curcuitboard."></li>
+    <li><img src="../wwwroot/images/outside.jpg" alt="Snapshot of people walking on campus."></li>
+    <li><img src="../wwwroot/images/fishbowl.jpg" alt="Fishbowl"></li>
+    <li><img src="../wwwroot/images/munsun.jpg" alt="Munsun giving a speech in the Gordon Field House"></li>
 </ul>
 
 <div id=@String.Concat("myDiv")>
@@ -28,8 +27,44 @@
 <link rel="stylesheet" href="~/jqueryui/themes/hot-sneaks/jquery-ui.min.css">
 <script src="~/jqueryui/jquery-ui.js"></script>
 <link rel="stylesheet" href="~/css/site.css">
+@*Responsive slideshow*@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="~/responsiveslides.min.js"></script>
+<style>
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+        .rslides li {
+            -webkit-backface-visibility: hidden;
+            position: absolute;
+            display: none;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+            .rslides li:first-child {
+                position: relative;
+                display: block;
+                float: left;
+            }
+
+        .rslides img {
+            display: block;
+            height: auto;
+            float: left;
+            width: 100%;
+            border: 0;
+        }
+</style>
 <script>
     $(function () {
-    $(".rslides").responsiveSlides();
+        $(".rslides").responsiveSlides();
     });
 </script>
