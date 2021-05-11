@@ -1,50 +1,100 @@
 ﻿@model Project3_FinalExam.ViewModels.AboutViewModel
-
-<h2 id="head">@Model.Title</h2>
-
-<div id="about"></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="~/responsiveslides.min.js"></script>
 
 
-<h3 id="title"><b>@Model.About.title</b></h3>
+    <h2 id="head">@Model.Title</h2>
 
-<div id=@String.Concat("myDiv")>
-    <p id="description">@Model.About.description</p>
+    <div id="about"></div>
 
-    <p id="quote">@Model.About.quote</p>
-    <p id="auth">-@Model.About.quoteAuthor</p>
-</div>
-@*Get jQuery and jQueryUI Scripts from wwwroot*@
-<script src="~/jquery/jquery.js"></script>
-<link rel="stylesheet" href="~/jqueryui/themes/hot-sneaks/jquery-ui.min.css">
-<script src="~/jqueryui/jquery-ui.js"></script>
-<link rel="stylesheet" href="~/css/site.css">
-<style>
-    body {
-        background-color: azure;
-        font-family: Arial, Helvetica, sans-serif;
-    }
 
-    #title {
-        font-style: italic;
-        font-size: 1.5em;
-        padding-bottom: 10px;
-    }
+    <h3 id="title"><b>@Model.About.title</b></h3>
 
-    #description {
-        padding-bottom: 10px;
-        padding-bottom: 15px;
-    }
+    @*Slideshow*@
+    <ul class="rslides">
+        <li><img src="~/images/rit.jpg" alt="RIT"></li>
+        <li><img src="~/images/ritBuilding.jpg" alt="RIT Building"></li>
+        <li><img src="~/images/circuitboard.jpg" alt="Dude Working on a curcuitboard."></li>
+        <li><img src="~/images/outside.jpg" alt="Snapshot of people walking on campus."></li>
+        <li><img src="~/images/fishbowl.jpg" alt="Fishbowl"></li>
+        <li><img src="~/images/munsun.jpg" alt="Munsun giving a speech in the Gordon Field House"></li>
+    </ul>
 
-    #quote {
-        display: block;
-        font-style: italic;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    <div id=@String.Concat("myDiv")>
+        <p id="description">@Model.About.description</p>
 
-    #auth {
-        text-align: center;
-    }
-</style>
+        <p id="quote">@Model.About.quote</p>
+        <p id="auth">-@Model.About.quoteAuthor</p>
+    </div>
+    @*Slideshow Links*@
+    <script>
+            $(".rslides").responsiveSlides();
+    </script>
+
+    @*Get jQuery and jQueryUI Scripts from wwwroot*@
+    <script src="~/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="~/jqueryui/themes/hot-sneaks/jquery-ui.min.css">
+    <script src="~/jqueryui/jquery-ui.js"></script>
+    <link rel="stylesheet" href="~/css/site.css">
+    <style>
+        body {
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #title {
+            font-style: italic;
+            font-size: 1.5em;
+            padding-bottom: 10px;
+        }
+
+        #description {
+            padding-bottom: 10px;
+            padding-bottom: 15px;
+        }
+
+        #quote {
+            display: block;
+            font-style: italic;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #auth {
+            text-align: center;
+        }
+
+        .rslides {
+            position: relative;
+            list-style: none;
+            overflow: hidden;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+            .rslides li {
+                -webkit-backface-visibility: hidden;
+                position: absolute;
+                display: none;
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+
+                .rslides li:first-child {
+                    position: relative;
+                    display: block;
+                    float: left;
+                }
+
+            .rslides img {
+                display: block;
+                height: auto;
+                float: left;
+                width: 100%;
+                border: 0;
+            }
+    </style>
 
